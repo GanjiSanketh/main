@@ -4,10 +4,10 @@ import { CustomerLoginComponent } from './customer-login/customer-login.componen
 
 const routes: Routes = [
   {
-    path: '', redirectTo: '/login', pathMatch: 'full'
+    path: '', redirectTo: '/sign-in', pathMatch: 'full'
   },
   {
-    path: 'login',
+    path: 'sign-in',
     component: CustomerLoginComponent
   }
 ];
