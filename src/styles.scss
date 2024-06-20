@@ -1,67 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
-.back-ground-image{
-  background-image: url('./assets/images/food-back-ground.jpg');
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.background-overlay {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  background-image: url('./assets/images/food-back-ground.jpg');
-  background-position: top;
-  background-size: cover; /* Change to cover for better scaling */
-  background-repeat: no-repeat;
-  background-color: black; /* Fallback background color */
-}
+// .back-ground-image{
+//   //background-image: url('./assets/images/food-back-ground.jpg');
+//   background-position: center;
+//   background-size: 100%;
+//   background-repeat: no-repeat;
+// }
+// .background-overlay {
+//   position: relative;
+//   margin: 0;
+//   padding: 0;
+//   min-height: 100vh;
+//   //background-image: url('./assets/images/food-back-ground.jpg');
+//   background-position: top;
+//   background-size: cover; /* Change to cover for better scaling */
+//   background-repeat: no-repeat;
+//   background-color: black; /* Fallback background color */
+// }
 
-.background-overlay::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('./assets/images/food-back-ground.jpg');
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.5; /* Adjust the opacity value as needed */
-  z-index: -1; /* Ensure the overlay is behind the content */
-}
+// .background-overlay::before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   //background-image: url('./assets/images/food-back-ground.jpg');
+//   background-position: top;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   opacity: 0.5; /* Adjust the opacity value as needed */
+//   z-index: -1; /* Ensure the overlay is behind the content */
+// }
 
-.auth-card{
-  //background: #c31432;  /* fallback for old browsers */
-  //background: -webkit-linear-gradient(to right, #1dc0f1, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
-  //background: linear-gradient(to right, #1dc0f1, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  border-radius: 5px;
-  box-shadow: 0px 0px 30px #f1ff2a;
-}
+// .auth-card{
+//   //background: #c31432;  /* fallback for old browsers */
+//   //background: -webkit-linear-gradient(to right, #1dc0f1, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+//   //background: linear-gradient(to right, #1dc0f1, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+//   border-radius: 5px;
+//   box-shadow: 0px 0px 30px #f1ff2a;
+// }
 label{
-  color: #797777;
-  font-weight: 700;
+  color: #464444;
+  font-weight: 600;
+  font-family: 'sans-serif';
 }
-.user-image{
-  height: 70px;
-}
-.auth-avatar{
-  text-align: center;
-  margin-top: -50px;
-}
-.auth{
-  margin-top: 35px;
-  border: none;
-  border-radius: 6px;
-}
-.btn-my{
-  background-color: #d39e00;
-  border-color: #d39e00;
-  color: #fff;
-}
-.simple-keyboard {
-  max-width: 850px;
-}
+// .user-image{
+//   height: 70px;
+// }
+// .auth-avatar{
+//   text-align: center;
+//   margin-top: -50px;
+// }
+// .auth{
+//   margin-top: 35px;
+//   border: none;
+//   border-radius: 6px;
+// }
+// .btn-my{
+//   background-color: #d39e00;
+//   border-color: #d39e00;
+//   color: #fff;
+// }
+// .simple-keyboard {
+//   max-width: 850px;
+// }
