@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-customer-login',
@@ -6,10 +8,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./customer-login.component.scss']
 })
 export class CustomerLoginComponent implements OnInit {
+  signInForm: any;
 
-  constructor() { }
+  constructor(
+    private formBuilder: FormBuilder,
+    private router: Router) {}
 
   ngOnInit(): void {
+    this.signInForm = this.formBuilder.group({
+      MobileNumber: new FormControl('', [Validators.required, Validators.minLength(10), Validators.maxLength(10)])
+    });
   }
 
+  onSubmit() {
+    if (this.signInForm.valid) {
+      // Navigate to the OTP component
+      this.router.navigate(['/otp-verification']);
+    }
+  }
 }
