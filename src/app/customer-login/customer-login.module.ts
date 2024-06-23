@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { CustomerLoginRoutingModule } from './customer-login-routing.module';
 import { CustomerLoginComponent } from './customer-login.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -11,7 +10,8 @@ import { CustomerLoginComponent } from './customer-login.component';
   ],
   imports: [
     CommonModule,
-    CustomerLoginRoutingModule
+    CustomerLoginRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class CustomerLoginModule { }
