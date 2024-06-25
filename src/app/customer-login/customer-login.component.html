@@ -7,7 +7,7 @@
             <div class="form-group">
               <label for="mobile">Mobile Number :</label>
               <input type="text" id="mobile" name="mobile" class="form-control mt-2" formControlName="MobileNumber"
-                placeholder="Mobile Number" minlength="10" maxlength="10">
+                placeholder="Enter mobile number" minlength="10" maxlength="10">
                 <div *ngIf="signInForm.get('MobileNumber').invalid && (signInForm.get('MobileNumber').dirty || signInForm.get('MobileNumber').touched)" class="invalid-feedback">
                     Mobile Number is required.
                 </div>

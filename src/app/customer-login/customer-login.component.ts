@@ -21,8 +21,8 @@ export class CustomerLoginComponent implements OnInit {
   }
 
   onSubmit() {
+    debugger;
     if (this.signInForm.valid) {
-      // Navigate to the OTP component
       this.router.navigate(['/otp-verification']);
     }
   }
