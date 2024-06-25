@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CustomerLoginModule } from './customer-login/customer-login.module';
+import { OtpVerificationModule } from './otp-verification/otp-verification.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { CustomerLoginModule } from './customer-login/customer-login.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CustomerLoginModule
+    CustomerLoginModule,
+    OtpVerificationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
