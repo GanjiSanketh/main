@@ -24,6 +24,7 @@ export class CustomerLoginComponent implements OnInit {
     debugger;
     if (this.signInForm.valid) {
       this.router.navigate(['/otp-verification']);
+      //aa
     }
   }
 }
