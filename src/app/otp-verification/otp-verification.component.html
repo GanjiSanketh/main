@@ -7,11 +7,12 @@
             <div class="form-group">
               <div class="row text-center">
                 <label class="mb-2" for="mobile">Please enter OTP</label>
-                <ng-otp-input  (onInputChange)="onOtpChange($event)"  [config]="config"></ng-otp-input>
+                <ng-otp-input (onInputChange)="onOtpChange($event)" [config]="config"></ng-otp-input>
               </div>
             </div>
             <div class="text-center mt-3">
-              <button type="submit" class="btn btn-success" [disabled]="otpForm.invalid" (click) = "onSubmit()">Submit</button>
+              <button type="submit" class="btn btn-success" [disabled]="otpForm.invalid"
+                (click)="onSubmit()">Submit</button>
             </div>
           </form>
         </div>
