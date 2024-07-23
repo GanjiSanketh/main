@@ -9,7 +9,7 @@ import { NgOtpInputConfig } from 'ng-otp-input';
 })
 export class OtpVerificationComponent implements OnInit {
   otpForm: any;
-  config :NgOtpInputConfig = {
+  config: NgOtpInputConfig = {
     allowNumbersOnly: false,
     length: 4,
     isPasswordInput: false,
@@ -22,13 +22,15 @@ export class OtpVerificationComponent implements OnInit {
 
   ngOnInit(): void {
     this.otpForm = this.formBuilder.group({
-      MobileNumber: new FormControl('', [Validators.required, Validators.minLength(10), Validators.maxLength(10)])
+      EnterOtp: new FormControl('', [Validators.required])
     });
   }
-  onOtpChange($event: any) {
-
+  onOtpChange(otp: string) {
+    this.otpForm.get('EnterOtp')?.setValue(otp);
   }
   onSubmit() {
-
+    if (this.otpForm.valid) {
+      console.log("Submitted Otp", this.otpForm.value);
+    }
   }
 }
